@@ -1,0 +1,14 @@
+
+  {
+  "name": "Test",
+  "description": "Test",
+  "version": "0.0.0",
+  "main": "mainfile.js",
+  "scripts": {
+    "start": "node mainfile.js"
+  },
+  "dependencies": {
+    "express": "^4.14.0,
+    "request": "2.81.0"
+  }
+}
