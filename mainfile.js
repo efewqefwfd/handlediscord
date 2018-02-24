@@ -4,6 +4,7 @@ var app = express()
 var port = process.env.PORT || 8080;
 
 app.get('/discord/:hook/:name/:content', function (req, res, next) {
+ console.log('hi')
  var hook = req.params.hook;
  var name = req.params.name;
  var info = req.params.content;
