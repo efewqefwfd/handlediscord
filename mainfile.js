@@ -4,7 +4,7 @@ var app = express()
 var port = process.env.PORT || 8080;
 
 console.log('starting...')
-app.get('/hook/:hook/name/:name/content/:content', function (req, res, next) {
+app.post('/hook/:hook/name/:name/content/:content', function (req, res, next) {
  console.log('hi')
 });
         
