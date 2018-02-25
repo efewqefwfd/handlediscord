@@ -6,12 +6,6 @@ var port = process.env.PORT || 8080;
 console.log('starting...')
 app.get('/hook/:hook/name/:name/content/:content', function (req, res, next) {
  console.log('hi')
-var hook = req.params.hook;
-var name = req.params.name;
- var info = req.params.content;
-var Hoook = new Webhook(hook)
-Hoook.info(name,info)
-
 });
         
         app.listen(port, function () {
