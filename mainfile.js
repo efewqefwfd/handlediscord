@@ -5,7 +5,6 @@ var express = require('express');
 var fs = require('fs');
 var app = express();
 
-app.use(express.bodyParser());
 
 app.get('/', function(req, res){
     console.log('GET /')
@@ -14,7 +13,7 @@ app.get('/', function(req, res){
 
 app.post('/', function(req, res){
     console.log('POST /');
-    console.dir(req.body); 
+    console.log(req.body); 
 });
 
 port = 3000;
