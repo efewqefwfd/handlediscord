@@ -19,3 +19,10 @@ app.post('/', function(req, res){
 port = 3000;
 app.listen(port);
 console.log('Listening at http://localhost:' + port)
+
+
+var request = require("request");
+
+request("http://www.sitepoint.com", function(error, response, body) {
+  console.log(body);
+});
