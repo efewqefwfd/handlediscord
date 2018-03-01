@@ -1,10 +1,8 @@
-var express = require('express')
-app = express()
+var express = require('express');
+app = express();
 
-app.post('/POST', function (req, res) {
-  res.send('POST request to the homepage')
+app.post('/', function (req, res) {
+  res.send('Got a POST request')
 })
 
-app.listen(80, function () {
-  console.log('Server is running. Point your browser to: http://localhost:80');
-});
+app.listen(80, () => console.log('Example app listening on port 80!'))
