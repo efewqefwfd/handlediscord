@@ -4,7 +4,7 @@ var express = require('express'),
     app = express(),
     //require the body-parser nodejs module
 app.post('/POST', function (req, res) {
-  console.log('POST request to the homepage')
+  res.send('POST request to the homepage')
 })
 
 app.listen(80, function () {
