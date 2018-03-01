@@ -1,8 +1,6 @@
 var express = require('express');
 app = express();
 
-app.post('/', function (req, res) {
-  res.send('Got a POST request')
-})
+app.get('/', (req, res) => res.send('Hello World!'))
 
 app.listen(80, () => console.log('Example app listening on port 80!'))
