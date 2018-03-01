@@ -18,6 +18,7 @@ app.use(express.static(path.join(__dirname, 'www')));
 
 //tell express what to do when the /about route is requested
 app.post('/POST', function(req, res){
+    console.log('post')
     //mimic a slow network connection
     setTimeout(function(){
 
