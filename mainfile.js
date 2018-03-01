@@ -1,8 +1,6 @@
-//require the express nodejs module
-var express = require('express'),
-    //set an instance of exress
-    app = express(),
-    //require the body-parser nodejs module
+var express = require('express')
+app = express()
+
 app.post('/POST', function (req, res) {
   res.send('POST request to the homepage')
 })
